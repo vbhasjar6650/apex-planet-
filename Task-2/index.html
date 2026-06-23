@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task 2 - Contact Form & To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">My Task 2</div>
+    <nav>
+      <a href="#contact">Contact Form</a>
+      <a href="#features">Features</a>
+      <a href="#todo">To-Do List</a>
+    </nav>
+  </header>
 
+  <main class="container">
+    <section class="hero">
+      <h1>Responsive Contact Form Project</h1>
+      <p>
+        This project includes HTML, CSS, JavaScript validation, responsive layout,
+        and a dynamic to-do list.
+      </p>
+    </section>
+
+    <section id="features" class="features">
+      <div class="card">
+        <h2>HTML Form</h2>
+        <p>Build a contact form with text, email, and message fields.</p>
+      </div>
+      <div class="card">
+        <h2>Validation</h2>
+        <p>Check required fields and validate email format using JavaScript.</p>
+      </div>
+      <div class="card">
+        <h2>Responsive Design</h2>
+        <p>Use Flexbox, CSS Grid, and media queries for all screen sizes.</p>
+      </div>
+      <div class="card">
+        <h2>DOM Manipulation</h2>
+        <p>Add and remove tasks dynamically in the to-do list.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="form-section">
+      <h2>Contact Form</h2>
+      <form id="contactForm" novalidate>
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" />
+          <small class="error" id="nameError"></small>
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+          <small class="error" id="emailError"></small>
+        </div>
+
+        <div class="input-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Enter subject" />
+          <small class="error" id="subjectError"></small>
+        </div>
+
+        <div class="input-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Write your message"></textarea>
+          <small class="error" id="messageError"></small>
+        </div>
+
+        <button type="submit">Submit</button>
+        <p class="success" id="successMessage"></p>
+      </form>
+    </section>
+
+    <section id="todo" class="todo-section">
+      <h2>Dynamic To-Do List</h2>
+      <div class="todo-box">
+        <input type="text" id="taskInput" placeholder="Add a new task" />
+        <button id="addTaskBtn">Add Task</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
