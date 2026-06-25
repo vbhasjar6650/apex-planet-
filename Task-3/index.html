@@ -1,1 +1,96 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task-3: Advanced Styling and JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Advanced Styling and JavaScript</h1>
+    <nav class="nav">
+      <a href="#quiz">Quiz</a>
+      <a href="#carousel">Carousel</a>
+      <a href="#api">API Demo</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Responsive Layout Demo -->
+    <section class="cards" aria-label="Responsive layout demo">
+      <article class="card">
+        <h2>Responsive Card 1</h2>
+        <p>This grid switches columns using CSS media queries.</p>
+      </article>
+      <article class="card">
+        <h2>Responsive Card 2</h2>
+        <p>Resize the browser to see layout, font, and spacing adapt.</p>
+      </article>
+      <article class="card">
+        <h2>Responsive Card 3</h2>
+        <p>Uses CSS variables, grid, and fluid typography.</p>
+      </article>
+    </section>
+
+    <hr />
+
+    <!-- Quiz -->
+    <section id="quiz" class="quiz" aria-labelledby="quiz-title">
+      <h2 id="quiz-title">JavaScript Quiz</h2>
+      <div id="quiz-container">
+        <div id="question" class="question"></div>
+        <div id="options" class="options" role="radiogroup" aria-live="polite"></div>
+        <div class="quiz-actions">
+          <button id="next-btn" class="btn" disabled>Next</button>
+        </div>
+        <div id="progress" class="progress"></div>
+        <div id="result" class="result" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Image Carousel -->
+    <section id="carousel" class="carousel" aria-labelledby="carousel-title">
+      <h2 id="carousel-title">Image Carousel</h2>
+      <div class="carousel-viewport">
+        <button class="carousel-btn prev" aria-label="Previous image">‹</button>
+        <div class="carousel-track">
+          <img src="1534864.jpg"alt="Mountain at sunrise" />
+          <img src="forest.jpeg" alt="Forest path" />
+          <img src="beach.jpg" alt="Beach and ocean" />
+        </div>
+        <button class="carousel-btn next" aria-label="Next image">›</button>
+      </div>
+      <div class="carousel-dots" role="tablist" aria-label="Image selector"></div>
+    </section>
+
+    <hr />
+
+    <!-- API Fetch -->
+    <section id="api" class="api" aria-labelledby="api-title">
+      <h2 id="api-title">Fetch Data from an API</h2>
+      <p>Click to fetch a random programming joke from the public JokeAPI.</p>
+      <div class="api-actions">
+        <button id="fetch-joke" class="btn">Get a Joke</button>
+      </div>
+      <div id="joke" class="joke" aria-live="polite"></div>
+      <details class="note">
+        <summary>About the API</summary>
+        <p>
+  This demo uses the JokeAPI
+  <a href="https://v2.jokeapi.dev" target="_blank">v2.jokeapi.dev</a>.
+  Network requests can fail; the code includes basic error handling.
+</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© 2026 Advanced Styling and JavaScript Demo</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
