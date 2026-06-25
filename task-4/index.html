@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Carter | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">Alex Carter</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">☰</button>
+    <nav class="nav" id="navMenu">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
+  <main id="home">
+    <section class="hero">
+      <p class="eyebrow">Frontend Developer</p>
+      <h1>Building responsive websites with clean UI and solid JavaScript.</h1>
+      <p class="hero-text">I design and develop simple, modern websites that work beautifully on mobile and desktop.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn secondary" href="#contact">Contact Me</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="about-grid">
+        <div class="panel">
+          <h3>Who I am</h3>
+          <p>I am a frontend developer focused on HTML, CSS, JavaScript, and responsive design.</p>
+        </div>
+        <div class="panel">
+          <h3>Skills</h3>
+          <ul class="tag-list">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Responsive Design</li><li>UI Layouts</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Portfolio Website</h3>
+          <p>Multi-section, responsive personal website with smooth navigation.</p>
+        </article>
+        <article class="card">
+          <h3>To-Do App</h3>
+          <p>Task manager with local storage for saving user data.</p>
+        </article>
+        <article class="card">
+          <h3>Product Listing Page</h3>
+          <p>Interactive catalog with filtering and sorting controls.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
